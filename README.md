@@ -2,7 +2,6 @@
 
 # Skebot
 
-App by CloudFixation
 
 
 ## Description
