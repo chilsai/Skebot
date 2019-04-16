@@ -1,0 +1,33 @@
+<div class="col-md-12">
+
+     <!-- Page Content -->
+     <div class="container-fluid">
+         <div class="jumbotron text-center">
+           <h2>Welcome to <B> Skebot </B></h2>
+           <p><!--Connect with friends with lightining fast. --><br/>
+             <small>Simplify Salesforce Deployment</small>
+             </p>
+			<div class="text-center">	
+				<div class="col-md-4"></div>	
+				<form role="form" class="col-md-4 text-center">			
+					<div class="form-group">
+						<label for="sel1">Select Environment:</label>
+						<select class="form-control input-sm" id="sel1" ng-model="environment">
+						  <option>Production</option>
+						  <option>Sandbox</option>				
+						</select>			    
+					</div>
+					<input type="checkbox" ng-model="AcceptTAndC"><a> I agree to the terms of service</a></input><br/><br/>			
+					<div class="alert alert-danger" ng-show="AcceptTermsError">
+					  <strong>Error!</strong> You must agree to terms of service.
+					</div>			
+					<button class="btn btn-primary" ng-click="login()">Login with Salesforce</button>
+				</form>
+			</div>	
+			<div class="col-md-4"></div>             
+         </div>
+     </div>	
+</div>	
+<script>
+
+</script>

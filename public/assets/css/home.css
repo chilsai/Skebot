@@ -1,0 +1,74 @@
+/**********************************/
+.mainNavHeader{
+  background-color: white;
+  border-color: #8e44ad;
+  border-width: thick;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.navHeaderChatPanel{
+  background-color: white;
+  border-color: #8e44ad;
+  border-width: thick;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+.navHeaderuserListPanel{
+  background-color: white;
+  border-color: #8e44ad;
+  border-width: thick;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+.UserImgLink{
+  width: 40px;
+  height: 40px;
+}
+
+.panle-heading{
+  height: 15px;
+  border-width: thick;
+  border-bottom-width: 1px;
+  border-color:#8e44ad;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+.panel-body{
+  height: 405px;
+  padding-top: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
+
+.userlistBody{
+  height: 440px;
+}
+.panel-footer{
+  background-color: white;
+  border-top-width: 1px;
+  border-color: #8e44ad;
+}
+
+.bodyStyle{
+    padding-top: 40px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.chatBoxPanel{
+  border-right-color: gray;
+  border-radius: 5px !important;
+  border-color: gray;
+}
+
+.userListPanel{
+  border-left-color: gray;
+}

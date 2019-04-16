@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+body {
+  padding-top: 50px;
+}
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  height: 100%;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ * Greater thav 768px shows the menu by default and also flips the semantics
+ * The issue is to show menu for large screens and to hide for small
+ * Also need to do something clever to turn off the tabs for when the navigation is hidden
+ * Otherwise keyboard users cannot find the focus point
+ * (For now I will ignore that for mobile users and also not worry about
+ * screen re-sizing popping the menu out.)
+ */
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 25%;
+  }
+
+  .row-offcanvas-left {
+    left: 25%;
+  }
+
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -25%; /* 3 columns */
+  	background-color: rgb(255, 255, 255);
+  }
+
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -25%; /* 3 columns */
+  	background-color: rgb(255, 255, 255);
+  }
+
+  .row-offcanvas-right.active {
+    right: 0; /* 3 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 0; /* 3 columns */
+  }
+
+  .row-offcanvas-right.active .sidebar-offcanvas {
+  	background-color: rgb(254, 254, 254);
+  }
+  .row-offcanvas-left.active .sidebar-offcanvas {
+  	background-color: rgb(254, 254, 254);
+  }
+
+.row-offcanvas .content {
+    width: 75%; /* 9 columns */
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+
+  }
+
+  .row-offcanvas.active .content {
+    width: 100%; /* 12 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 25%; /* 3 columns */
+  }
+}
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+
+body {
+  font-family: 'Lato', Arial;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 70px;
+}
+
+a {
+  font-family: 'Lato', Arial;
+  -webkit-font-smoothing: antialiased;
+  color:#8e44ad;  
+}
+
+/* mouse over link */
+a:hover {
+    color: #d1b4de;
+}
+
+/* selected link */
+a {
+    color: #a469bd;
+}
+
+/* visited link */
+a:visited {
+    color: #a469bd;
+}
+
+
+.lUserImg{
+  width: 35px;
+  height: 35px;
+}
+
+
+.panelHeading{
+  height: 50px;
+  background-color: white;
+}
+
+
+.jumbotron{
+  background-color: white;
+}
+
+.btn-primary{
+  background-color: #A569BD;
+  border-color: #A569BD;
+}
+
+.btn-primary.active,.btn-primary.focus,.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.open>.dropdown-toggle.btn-primary{
+  background-color:#8e44ad;border-color:#8e44ad
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.hideDiv{
+  display:none;
+}
+
+.ul
+{
+list-style-type: none;
+}
+
+.navbar-panel {
+  background-color: white;
+  border-color: #8e44ad;
+  border-width: thick;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: #8e44ad;
+  border-width: thick;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: #8e44ad;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #8e44ad;
+}
+.navbar-default .navbar-text {
+  color: #8e44ad;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #8e44ad;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #A569BD;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #A569BD;
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #8e44ad;
+  /*background-color: #8e44ad;*/
+}
+.navbar-default .navbar-toggle {
+  border-color: #8e44ad;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #BB8FCE;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #8e44ad;
+}
+.navbar-default .navbar-link {
+  color: #8e44ad;
+}
+.navbar-default .navbar-link:hover {
+  color: #8e44ad;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #8e44ad;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #8e44ad;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #8e44ad;
+    background-color: #8e44ad;
+  }
+}
