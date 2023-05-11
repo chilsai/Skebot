@@ -6,7 +6,7 @@
 
 ## Description
 
-Skebot is cloud solution for Salesfroce Deployments.
+Skebot is cloud solution for Salesforce Deployments.
 
 You can deploy the components with only browser with out any additonal softwares to be installed.
 
